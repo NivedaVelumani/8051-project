@@ -1,0 +1,45 @@
+#include<reg51.h> 
+
+sbit lamp1 =p2^0; 
+
+sbit lamp2=p2^5 
+
+sbit switch =p3^3 
+
+void main() 
+
+{ 
+
+   switch =1; // making it one facilitates the reading of input 
+
+   while(1) 
+
+   { 
+
+        If(switch==1) 
+
+        { 
+
+              lamp1=1; 
+
+             lamp2=1; 
+
+      
+
+        } 
+
+    
+
+else 
+
+    { 
+
+     lamp1=0; 
+
+    lamp2=0; 
+
+    } 
+
+  } 
+
+} 
